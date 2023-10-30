@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+  --color-brand-1: hsl(0, 0%, 17%);
+  --color-brand-2: hsl(0, 0%, 59%);
+
+  --font-rubik: "Rubik", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-rubik);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.HeaderBox {
+  position: absolute;
+  z-index: 100;
+  left: 3rem;
+  right: 3rem;
+  top: 30rem;
+  z-index: 10;
+  margin: auto;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  z-index: 10;
+  padding: 2rem;
+  transform: translateY(-10rem);
+}
+
+.HeaderBox-Title {
+  font-size: 1.8rem;
+  color: var(--color-brand-2);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.HeaderBox-Value {
+  font-size: 1.8rem;
+  color: var(--color-brand-1);
+}
+
+@media screen and (min-width: 768px) {
+  .HeaderBox {
+    flex-direction: row;
+    justify-content: space-around;
+    transform: translateY(-5rem);
+    left: 4rem;
+    right: 4rem;
+    top: 25rem;
+  }
+}
