@@ -13,9 +13,7 @@ function App() {
   const fetchData = () => {
     try {
       axios
-        .get(
-          `http://api.ipstack.com/${ipAddress}?access_key=a8bb478461d764bbb25d05b5e66dca7e`
-        )
+        .get(`https://ipapi.co/${ipAddress}/json/`)
         .then((res) => {
           setData(res);
         })
@@ -33,6 +31,7 @@ function App() {
 
   const handleClick = () => {
     fetchData();
+    console.log(data);
   };
 
   return (

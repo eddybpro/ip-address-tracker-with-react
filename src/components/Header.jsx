@@ -11,16 +11,16 @@ function Header({ data }) {
       <div>
         <p className="HeaderBox-Title">location</p>
         <p className="HeaderBox-Value">
-          {data.city},{data.region_code}
+          {data.city},{data.country_code}
         </p>
       </div>
       <div>
-        <p className="HeaderBox-Title">country</p>
-        <p className="HeaderBox-Value">{data.country_name}</p>
+        <p className="HeaderBox-Title">timezone</p>
+        <p className="HeaderBox-Value">{data.timezone}</p>
       </div>
       <div>
-        <p className="HeaderBox-Title">capital</p>
-        <p className="HeaderBox-Value">{data.location.capital}</p>
+        <p className="HeaderBox-Title">isp</p>
+        <p className="HeaderBox-Value">{data.org}</p>
       </div>
     </div>
   );
